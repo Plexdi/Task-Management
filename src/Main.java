@@ -5,12 +5,17 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        int id = 1;
-        String[] section = {"Title", "Completion"};
-        String[] Values = {"Gaming", "True"};
-
-        editTask(id, section, Values);
+        String[] opt = {"title", "description", "deadlines", "priority", "category"};
+        String[] section = {"title", "description", "deadlines"};
+        for (String options : opt){
+            for (String choice : section){
+                if (options.contains(choice)){
+                    System.out.println(choice);
+                }
+            }
+        }
     }
+
 
     static void editTask(int taskID, String[] section, String[] newValue){
         ArrayList<String> tasks = new ArrayList<>();

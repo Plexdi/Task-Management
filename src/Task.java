@@ -28,47 +28,47 @@ public class Task {
         return title;
     }
 
-    public void setTitle(){
-        this.title = title;
+    public void setTitle(String newTitle){
+        this.title = newTitle;
     }
 
     public String getDescription(){
         return description;
     }
 
-    public void setDescription(){
-        this.description = description;
+    public void setDescription(String newDescription){
+        this.description = newDescription;
     }
 
     public String deadlines(){
         return deadlines;
     }
 
-    public void setDeadlines(){
-        this.deadlines = deadlines;
+    public void setDeadlines(String newDeadlines){
+        this.deadlines = newDeadlines;
     }
 
     public String priority(){
         return priority;
     }
 
-    public void setPriority(){
-        this.priority = priority;
+    public void setPriority(String newPriority){
+        this.priority = newPriority;
     }
 
     public String category(){
         return category;
     }
 
-    public void setCategory(){
-        this.category = category;
+    public void setCategory(String newCategory){
+        this.category = newCategory;
     }
 
     public boolean isCompleted(){
         return isCompleted;
     }
 
-    public void setCompletions(){
-        this.isCompleted = isCompleted;
+    public void setCompletions(Boolean newCompletion){
+        this.isCompleted = newCompletion;
     }
 }
