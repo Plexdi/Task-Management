@@ -17,6 +17,7 @@ public class TaskManager {
             System.out.println("Task added successfully");
         }
     }
+    
 
     //remove task method 
     public void removeTask(Task task){
@@ -108,7 +109,7 @@ public class TaskManager {
                         break;
                     case "completion":
                         if (newValue instanceof Boolean) {
-                            taskToEdit.setIsCompleted((Boolean) newValue);
+                            taskToEdit.setCompletions((boolean) newValue);
                         } else {
                             System.out.println("Invalid value for completion. Expected a Boolean.");
                         }
